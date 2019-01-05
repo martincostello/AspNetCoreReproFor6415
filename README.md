@@ -13,6 +13,6 @@ To reproduce the issue:
 
 Within a few minutes, the client application should print an exception caused by an HTTP 500 response from the MVC application to the console.
 
-Running the client application with Refit [request buffering enabled]() using a command such as `dotnet run --configuration Release -- --buffered` will not reproduce the error.
+Running the client application with Refit [request buffering enabled](https://github.com/reactiveui/refit#buffering-and-the-content-length-header) using a command such as `dotnet run --configuration Release -- --buffered` will not reproduce the error.
 
-Changing the `ancmHostingModel` property to `OutOfProcess` and running the MVC application will also not reproduce the error.
+Changing the [`ancmHostingModel`](https://github.com/martincostello/AspNetCoreReproFor6415/blob/386b55ba08925a2163f0020bf22307d6edd45a2d/AspNetCoreReproFor6415/Properties/launchSettings.json#L14) property to `OutOfProcess` and running the MVC application will also not reproduce the error.
