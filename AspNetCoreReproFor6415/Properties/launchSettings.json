@@ -12,6 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "ancmHostingModel": "InProcess",
+      "nativeDebugging": false,
       "launchBrowser": false,
       "launchUrl": "",
       "environmentVariables": {
